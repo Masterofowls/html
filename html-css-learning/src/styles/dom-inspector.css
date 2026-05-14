@@ -1,0 +1,91 @@
+.dom-inspector {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: var(--spacing-lg);
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.dom-inspector h3 {
+  margin-bottom: var(--spacing-md);
+  color: var(--accent-secondary);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dom-tree {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.dom-node {
+  margin-bottom: var(--spacing-xs);
+}
+
+.dom-node-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: background var(--transition-fast);
+}
+
+.dom-node-header:hover {
+  background: var(--bg-tertiary);
+}
+
+.expand-icon {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: 0.7rem;
+  margin-right: 4px;
+  transition: transform var(--transition-fast);
+  user-select: none;
+}
+
+.expand-icon.expanded {
+  transform: rotate(90deg);
+}
+
+.expand-icon.placeholder {
+  cursor: default;
+}
+
+.tag-name {
+  color: var(--accent-primary);
+  font-weight: 600;
+}
+
+.attribute {
+  margin-left: 4px;
+}
+
+.attr-name {
+  color: var(--accent-tertiary);
+}
+
+.attr-value {
+  color: #ff6b9d;
+}
+
+.dom-node-children {
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .dom-inspector {
+    max-height: 250px;
+  }
+
+  .dom-tree {
+    font-size: 0.75rem;
+  }
+}

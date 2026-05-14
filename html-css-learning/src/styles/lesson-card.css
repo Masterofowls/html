@@ -1,0 +1,82 @@
+.lesson-card {
+  background: var(--bg-tertiary);
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.lesson-card:hover {
+  border-color: var(--accent-primary);
+  background: var(--bg-highlight);
+  transform: translateX(4px);
+}
+
+.lesson-card.active {
+  border-color: var(--accent-primary);
+  background: var(--bg-highlight);
+  box-shadow: 0 0 12px rgba(0, 217, 255, 0.3);
+}
+
+.lesson-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-sm);
+}
+
+.lesson-card-header h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.level-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.level-badge.beginner {
+  background: #00ff88;
+  color: #0f0f0f;
+}
+
+.level-badge.intermediate {
+  background: #ffaa00;
+  color: #0f0f0f;
+}
+
+.level-badge.advanced {
+  background: #ff006e;
+  color: #ffffff;
+}
+
+.lesson-description {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: var(--spacing-sm) 0;
+  line-height: 1.4;
+}
+
+.lesson-tags {
+  display: flex;
+  gap: var(--spacing-xs);
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-block;
+  padding: 2px 6px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}

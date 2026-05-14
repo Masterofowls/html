@@ -1,0 +1,127 @@
+.color-picker-container {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: var(--spacing-lg);
+}
+
+.color-picker-container h3 {
+  margin-bottom: var(--spacing-md);
+  color: var(--accent-primary);
+}
+
+.color-input-group {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  align-items: center;
+}
+
+.color-input {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color var(--transition-fast);
+}
+
+.color-input:hover {
+  border-color: var(--accent-primary);
+}
+
+.color-preview {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 4px 12px rgba(0, 217, 255, 0.2);
+}
+
+.color-values {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.color-value-item {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: var(--spacing-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.color-value-item:hover {
+  border-color: var(--accent-primary);
+  background: var(--bg-highlight);
+}
+
+.color-value-item label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-xs);
+}
+
+.color-value-item code {
+  display: block;
+  color: var(--accent-tertiary);
+  font-size: 0.875rem;
+  word-break: break-all;
+}
+
+.copy-hint {
+  display: none;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent-primary);
+  color: var(--bg-primary);
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.color-value-item:hover .copy-hint {
+  display: block;
+}
+
+.color-palette h4 {
+  margin-bottom: var(--spacing-md);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-md);
+}
+
+.palette-button {
+  aspect-ratio: 1;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.palette-button:hover {
+  transform: scale(1.1);
+  border-color: var(--text-primary);
+}
+
+.palette-button:active {
+  transform: scale(0.95);
+}

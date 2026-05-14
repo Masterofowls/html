@@ -1,0 +1,36 @@
+.code-editor-wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--bg-secondary);
+}
+
+.editor-header {
+  background: var(--bg-tertiary);
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 44px;
+}
+
+.editor-language {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Monaco Editor Styling */
+.code-editor-wrapper .monaco-editor {
+  font-family: var(--font-mono) !important;
+}
+
+.code-editor-wrapper .monaco-editor .token {
+  font-family: var(--font-mono) !important;
+}
